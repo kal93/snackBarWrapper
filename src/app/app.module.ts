@@ -10,13 +10,21 @@ import { MaterialSnackBarDemoComponent } from './demo-examples/material-snack-ba
 
 // angular material imports
 import {  MatInputModule, MatSnackBarModule, MatFormFieldModule, MatButtonModule} from '@angular/material';
+import { TextBoxComponent } from './lib/text-box/text-box.component';
+
+// font awesome
+import { AngularFontAwesomeModule } from 'angular-font-awesome';
+import { AngularFontAwesomeComponent } from 'angular-font-awesome/dist/src/component/angular-font-awesome.component';
+import { TextBoxExampleComponent } from './demo-examples/text-box-example/text-box-example.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    
+
     MaterialSnackBarComponent,
-    MaterialSnackBarDemoComponent
+    MaterialSnackBarDemoComponent,
+    TextBoxComponent,
+    TextBoxExampleComponent
   ],
   imports: [
     BrowserModule,
@@ -24,7 +32,8 @@ import {  MatInputModule, MatSnackBarModule, MatFormFieldModule, MatButtonModule
     MatSnackBarModule,
     MatInputModule,
     MatFormFieldModule,
-    MatButtonModule
+    MatButtonModule,
+    AngularFontAwesomeModule
   ],
   providers: [],
   bootstrap: [AppComponent]

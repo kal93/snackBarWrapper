@@ -13,7 +13,7 @@ export class MaterialSnackBarComponent implements OnInit {
 
   openSnackBar(message: string, action: string) {
     this.snackBar.open(message, action, {
-      duration: 2000, // auto-dismisal timeout
+      duration: 2000, // auto-dissmisal timeout
       announcementMessage:"I'm leaving....",// for a11y
       // specifies postion horizntally
       horizontalPosition:'right',
